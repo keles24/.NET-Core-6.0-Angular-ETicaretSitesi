@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj" />
+    <ProjectReference Include="..\..\Core\ETicaretAPI.Domain\ETicaretAPI.Domain.csproj" />
+    <ProjectReference Include="..\..\Insfrastructure\ETicaretAPI.Insfrastructure\ETicaretAPI.Insfrastructure.csproj" />
     <ProjectReference Include="..\..\Insfrastructure\ETicaretAPI.Persistence\ETicaretAPI.Persistence.csproj" />
   </ItemGroup>
 
