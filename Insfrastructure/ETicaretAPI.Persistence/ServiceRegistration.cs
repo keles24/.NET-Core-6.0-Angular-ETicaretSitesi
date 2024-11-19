@@ -15,7 +15,7 @@ namespace ETicaretAPI.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddDbContext<ETicaretDbContext>(options => options.UseNpgsql(""));
+            services.AddDbContext<ETicaretDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
         }
     }
 }
